@@ -30,10 +30,10 @@ const Navbar = () => {
 							className='w-12 mr-2 md:mr-0 md:w-24 md:mb-4 lg:mr-4'
 						/>
 						<div className='flex flex-col items-center'>
-							<span className='text-primary text-lg tracking-wider transition ease-in-out duration-300 hover:text-accent md:hidden lg:block lg:text-3xl'>
+							<span className='font-serif text-primary text-lg tracking-wider transition ease-in-out duration-300 hover:text-accent md:hidden lg:block lg:text-3xl'>
 								Adam
 							</span>
-							<span className='text-primaryDark text-lg tracking-wider transition ease-in-out duration-300 hover:text-accent md:hidden lg:block lg:text-3xl'>
+							<span className='font-serif text-primaryDark text-lg tracking-wider transition ease-in-out duration-300 hover:text-accent md:hidden lg:block lg:text-3xl'>
 								Sackfield
 							</span>
 						</div>
@@ -59,7 +59,7 @@ const Navbar = () => {
 						<ul className='md:flex md:justify-between text-primaryLight'>
 							<li>
 								<NavLink
-									className='p-4 text-center block transition ease-in-out duration-300 hover:text-accent md:text-2xl'
+									className='p-4 text-center block font-serif tracking-wide transition ease-in-out duration-300 hover:text-accent md:text-2xl'
 									onClick={handleMenuHide}
 									to='/'
 								>
@@ -69,7 +69,7 @@ const Navbar = () => {
 
 							<li>
 								<NavLink
-									className='p-4 text-center block transition ease-in-out duration-300 hover:text-accent md:text-2xl'
+									className='p-4 text-center block font-serif tracking-wide transition ease-in-out duration-300 hover:text-accent md:text-2xl'
 									onClick={handleMenuHide}
 									to='/about'
 								>
@@ -79,7 +79,7 @@ const Navbar = () => {
 
 							<li>
 								<NavLink
-									className='p-4 text-center block transition ease-in-out duration-300 hover:text-accent md:text-2xl'
+									className='p-4 text-center block font-serif tracking-wide transition ease-in-out duration-300 hover:text-accent md:text-2xl'
 									onClick={handleMenuHide}
 									to='/work'
 								>
@@ -89,7 +89,7 @@ const Navbar = () => {
 
 							<li>
 								<NavLink
-									className='p-4 text-center block transition ease-in-out duration-300 hover:text-accent md:text-2xl'
+									className='p-4 text-center block font-serif tracking-wide transition ease-in-out duration-300 hover:text-accent md:text-2xl'
 									onClick={handleMenuHide}
 									to='/contact'
 								>
