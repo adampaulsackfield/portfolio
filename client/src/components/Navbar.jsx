@@ -19,7 +19,11 @@ const Navbar = () => {
 		<header className='pt-4'>
 			<div className='container mx-auto'>
 				<div className='p-4 flex flex-wrap items-center justify-between md:flex-col lg:flex-row'>
-					<Link to='/' className='flex md:flex-col md:items-center lg:flex-row'>
+					<Link
+						to='/'
+						className='flex md:flex-col md:items-center lg:flex-row'
+						onClick={handleMenuHide}
+					>
 						<img
 							src={Logo}
 							alt='Person on a laptop'
@@ -56,6 +60,7 @@ const Navbar = () => {
 							<li>
 								<NavLink
 									className='p-4 text-center block transition ease-in-out duration-300 hover:text-accent md:text-2xl'
+									onClick={handleMenuHide}
 									to='/'
 								>
 									Home
@@ -65,6 +70,7 @@ const Navbar = () => {
 							<li>
 								<NavLink
 									className='p-4 text-center block transition ease-in-out duration-300 hover:text-accent md:text-2xl'
+									onClick={handleMenuHide}
 									to='/about'
 								>
 									About
@@ -74,6 +80,7 @@ const Navbar = () => {
 							<li>
 								<NavLink
 									className='p-4 text-center block transition ease-in-out duration-300 hover:text-accent md:text-2xl'
+									onClick={handleMenuHide}
 									to='/work'
 								>
 									Work
@@ -83,6 +90,7 @@ const Navbar = () => {
 							<li>
 								<NavLink
 									className='p-4 text-center block transition ease-in-out duration-300 hover:text-accent md:text-2xl'
+									onClick={handleMenuHide}
 									to='/contact'
 								>
 									Contact
