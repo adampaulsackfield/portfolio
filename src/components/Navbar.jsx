@@ -16,7 +16,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<header className='pt-4'>
+		<header className='pt-4 bg-background'>
 			<div className='container mx-auto'>
 				<div className='p-4 flex flex-wrap items-center justify-between md:flex-col lg:flex-row'>
 					<Link

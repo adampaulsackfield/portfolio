@@ -1,4 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -9,7 +11,7 @@ import NotFound from './components/NotFound';
 
 const App = () => {
 	return (
-		<div className='bg-background min-h-screen'>
+		<div className='min-h-screen'>
 			<Navbar />
 
 			<Routes>
@@ -19,6 +21,8 @@ const App = () => {
 				<Route path='/contact' element={<Contact />} />
 				<Route path='*' element={<NotFound />} />
 			</Routes>
+
+			<ToastContainer closeOnClick pauseOnHover />
 		</div>
 	);
 };
