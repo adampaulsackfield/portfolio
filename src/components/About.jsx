@@ -44,7 +44,7 @@ const About = () => {
 						A few recent technologies I've been working with recently:
 					</p>
 
-					<div className='flex justify-around px-20 mt-2 lg:px-2 lg:py-20 lg:w-96 lg:justify-evenly lg:text-xl'>
+					<div className='flex justify-around px-10 mt-2 lg:px-2 lg:py-20 lg:w-96 lg:justify-evenly lg:text-xl'>
 						<ul className='mr-12'>
 							<li>
 								<FaArrowAltCircleRight className='text-accent inline mb-2' />{' '}
