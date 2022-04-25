@@ -1,14 +1,35 @@
 import React, { useState, useEffect } from 'react';
+import sanityClient from '../client';
 
 import Project from './Project';
-
-import projectsData from '../assets/mock-projects';
 
 const Work = () => {
 	const [projects, setProjects] = useState([]);
 
 	useEffect(() => {
-		setProjects(projectsData);
+		sanityClient
+			.fetch(
+				`*[_type == "project"]{
+        title,
+        body,
+				liveUrl,
+				gitUrl,
+				tag,
+				imageUrl{
+          asset->{
+          _id,
+          url
+        }
+      }
+    }`
+			)
+			.then((data) => {
+				console.log(data);
+				setProjects(data);
+			})
+			.catch((err) => {
+				console.error(err);
+			});
 	}, []);
 
 	return (
