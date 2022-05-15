@@ -20,7 +20,7 @@ const Project = ({ project }) => {
 				</button>
 				<button className='mr-2 px-2 py-1 text-md tracking-wide font-serif border-2 border-accent rounded-3xl transition ease-in-out duration-200 hover:scale-110'>
 					<a href={project.gitUrl} target='_blank' rel='noreferrer'>
-						View <FaGithub />
+						View <FaGithub className='inline' />
 					</a>
 				</button>
 			</div>
