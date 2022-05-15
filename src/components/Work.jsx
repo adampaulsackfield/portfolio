@@ -56,7 +56,7 @@ const Work = () => {
 				</div>
 
 				<div className='mt-8'>
-					<ul className='grid grid-cols-1 gap-4 p-1 text-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4'>
+					<ul className='grid grid-cols-1 gap-4 p-1 text-center sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4'>
 						{projects &&
 							projects.map((project) => {
 								return <Project project={project} />;
