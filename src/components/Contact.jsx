@@ -3,6 +3,8 @@ import { FaEnvelope, FaGithub, FaSlack, FaDiscord } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
 
+// TODO - Reset all form private data and implement .env
+
 const initialState = {
 	name: '',
 	email: '',
