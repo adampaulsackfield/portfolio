@@ -59,8 +59,8 @@ const Contact = () => {
 						Contact Me
 					</h1>
 					<p className='text-xl text-center font-light mb-4'>
-						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
-						adipisci quibusdam quo necessitatibus.
+						If you're interested in working together, or just want to reach out
+						for a chat, you can do so here.
 					</p>
 
 					<div className='hidden text-center lg:block'>
@@ -71,17 +71,20 @@ const Contact = () => {
 
 						<p className='pb-4'>
 							<FaGithub className='inline pr-2 text-3xl' />
-							<a href='mailto:adam@adamsackfield.uk'>GitHub</a>
+							<a
+								href='https://github.com/adampaulsackfield'
+								target='_blank'
+								rel='noreferrer'
+							>
+								GitHub
+							</a>
 						</p>
 
 						<p className='pb-4'>
 							<FaSlack className='inline pr-2 text-3xl' />
-							<a href='mailto:adam@adamsackfield.uk'>Slack</a>
-						</p>
-
-						<p className='pb-4'>
-							<FaDiscord className='inline pr-2 text-3xl' />
-							<a href='mailto:adam@adamsackfield.uk'>Discord</a>
+							<a href='https://adam-vav4795.slack.com/archives/C03FDK5EWEA'>
+								Slack
+							</a>
 						</p>
 					</div>
 				</div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import wordcloud from '../assets/wordcloud.png';
 
@@ -23,12 +24,21 @@ const Home = () => {
 						</div>
 
 						<div className='flex justify-center my-10 md:my-6 lg:justify-start'>
-							<button className='mr-4 px-8 py-2 text-xl tracking-widest font-serif border-2 border-accent rounded-3xl transition ease-in-out duration-200 hover:scale-110 lg:text-2xl'>
+							<Link
+								to='/work'
+								className='mr-4 px-8 py-2 text-xl tracking-widest font-serif border-2 border-accent rounded-3xl transition ease-in-out duration-200 hover:scale-110 lg:text-2xl'
+							>
 								Work
-							</button>
+							</Link>
 
 							<button className='px-8 py-2 text-xl tracking-widest font-serif border-2 border-accent rounded-3xl transition ease-in-out duration-200 hover:scale-110 lg:text-2xl'>
-								GitHub
+								<a
+									href='https://github.com/adampaulsackfield'
+									target='_blank'
+									rel='noreferrer'
+								>
+									GitHub
+								</a>
 							</button>
 						</div>
 					</div>

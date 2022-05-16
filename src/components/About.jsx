@@ -16,7 +16,12 @@ const About = () => {
 					</h1>
 
 					<p className='text-xl text-center font-light mb-4 md:text-2xl md:leading-10 lg:text-left lg:mt-6'>
-						I have long been interested in
+						I have long been interested in Software Development and the endless
+						possibilites that it offers. After recently completing the
+						Northcoders Bootcamp in Full-Stack JavaScript I am looking for the
+						next challenge in my career. My ideal role would be for a company
+						that allows me to continue my growth and developement by continuing
+						to learn new technologies and challenging myself.
 					</p>
 
 					<p className='text-xl text-center font-light text-primaryDark lg:text-left'>
@@ -26,9 +31,24 @@ const About = () => {
 					</p>
 
 					<div className='flex justify-center my-4 text-2xl md:text-4xl lg:justify-start lg:text-5xl lg:mt-10'>
-						<FaGithub className='mr-4 transition ease-in duration-200 hover:text-accent' />
-						<FaSlack className='mr-4 transition ease-in duration-200 hover:text-accent' />
-						<FaEnvelope className=' transition ease-in duration-200 hover:text-accent' />
+						<a
+							href='https://github.com/adampaulsackfield'
+							target='_blank'
+							rel='noreferrer'
+						>
+							<FaGithub className='mr-4 transition ease-in duration-200 hover:text-accent' />
+						</a>
+						<a
+							href='https://adam-vav4795.slack.com/archives/C03FDK5EWEA'
+							target='_blank'
+							rel='noreferrer'
+						>
+							<FaSlack className='mr-4 transition ease-in duration-200 hover:text-accent' />
+						</a>
+
+						<a href='mailto:adam@adamsackfield.uk'>
+							<FaEnvelope className=' transition ease-in duration-200 hover:text-accent' />
+						</a>
 					</div>
 				</div>
 
