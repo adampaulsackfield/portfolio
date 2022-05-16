@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { FaEnvelope, FaGithub, FaSlack, FaDiscord } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaSlack } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
 
