@@ -5,11 +5,17 @@ import Project from './Project';
 
 const Work = () => {
 	const [projects, setProjects] = useState([]);
+	const [filter, setFilter] = useState('all');
+
+	const handleFilterProjects = (type) => {
+		setFilter(type);
+	};
 
 	useEffect(() => {
-		sanityClient
-			.fetch(
-				`*[_type == "project"]{
+		if (filter === 'all') {
+			sanityClient
+				.fetch(
+					`*[_type == "project"]{
         title,
         body,
 				liveUrl,
@@ -22,15 +28,40 @@ const Work = () => {
         }
       }
     }`
-			)
-			.then((data) => {
-				console.log(data);
-				setProjects(data);
-			})
-			.catch((err) => {
-				console.error(err);
-			});
-	}, []);
+				)
+				.then((data) => {
+					console.log(data);
+					setProjects(data);
+				})
+				.catch((err) => {
+					console.error(err);
+				});
+		} else {
+			sanityClient
+				.fetch(
+					`*[_type == "project" && tag == "${filter}"]{
+        title,
+        body,
+				liveUrl,
+				gitUrl,
+				tag,
+				imageUrl{
+          asset->{
+          _id,
+          url
+        }
+      }
+    }`
+				)
+				.then((data) => {
+					console.log(data);
+					setProjects(data);
+				})
+				.catch((err) => {
+					console.error(err);
+				});
+		}
+	}, [filter]);
 
 	return (
 		<div className='px-2 min-h-screen bg-background text-primaryLight'>
@@ -42,21 +73,37 @@ const Work = () => {
 				</div>
 
 				<div className='flex justify-center'>
-					<button className='mr-2 px-2 py-1 text-md tracking-wide font-serif border-2 border-accent rounded-3xl transition ease-in-out duration-200 hover:scale-110 '>
-						Frontend
+					<button
+						className='mr-2 px-2 py-1 text-md tracking-wide font-serif border-2 border-accent rounded-3xl transition ease-in-out duration-200 hover:scale-110 '
+						onClick={() => handleFilterProjects('front-end')}
+					>
+						Front-end
 					</button>
 
-					<button className='mr-2 px-2 py-1 text-md tracking-wide font-serif border-2 border-accent rounded-3xl transition ease-in-out duration-200 hover:scale-110 '>
-						Backend
+					<button
+						className='mr-2 px-2 py-1 text-md tracking-wide font-serif border-2 border-accent rounded-3xl transition ease-in-out duration-200 hover:scale-110 '
+						onClick={() => handleFilterProjects('back-end')}
+					>
+						Back-end
 					</button>
 
-					<button className='mr-2 px-2 py-1 text-md tracking-wide font-serif border-2 border-accent rounded-3xl transition ease-in-out duration-200 hover:scale-110 '>
+					<button
+						className='mr-2 px-2 py-1 text-md tracking-wide font-serif border-2 border-accent rounded-3xl transition ease-in-out duration-200 hover:scale-110 '
+						onClick={() => handleFilterProjects('full-stack')}
+					>
 						Full-Stack
+					</button>
+
+					<button
+						className='mr-2 px-2 py-1 text-md tracking-wide font-serif border-2 border-accent rounded-3xl transition ease-in-out duration-200 hover:scale-110 '
+						onClick={() => handleFilterProjects('all')}
+					>
+						All
 					</button>
 				</div>
 
 				<div className='mt-8'>
-					<ul className='grid grid-cols-1 gap-4 p-1 text-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-1'>
+					<ul className='grid grid-cols-1 gap-4 p-1 text-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2'>
 						{projects &&
 							projects.map((project) => {
 								return <Project project={project} />;
