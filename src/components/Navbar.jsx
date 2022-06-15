@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { Divide as Hamburger } from 'hamburger-react';
 
 import logo from '../assets/images/logo.png';

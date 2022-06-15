@@ -10,7 +10,7 @@ const colors = ['pink', 'blue', 'orange', 'purple', 'green', 'yellow'];
 const Work = () => {
 	const [projects, setProjects] = useState([]);
 	const [tags, setTags] = useState(new Set());
-	const [filter, setFilter] = useState('all');
+	// const [filter, setFilter] = useState('all');
 
 	useEffect(() => {
 		getDocs(collection(db, 'projects'))
