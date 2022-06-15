@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import { Squash as Hamburger } from 'hamburger-react';
 
-import Logo from '../assets/logo.png';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import { Divide as Hamburger } from 'hamburger-react';
+
+import logo from '../assets/images/logo.png';
 
 const Navbar = () => {
 	const [menu, setMenu] = useState(false);
@@ -11,32 +12,19 @@ const Navbar = () => {
 		setMenu(!menu);
 	};
 
-	const handleMenuHide = () => {
+	const handleMenuClose = () => {
 		setMenu(false);
 	};
 
 	return (
-		<header className='pt-4 bg-background'>
+		<header className='fixed w-full top-0 z-50 bg-background text-black'>
 			<div className='container mx-auto'>
-				<div className='p-4 flex flex-wrap items-center justify-between md:flex-col lg:flex-row'>
-					<Link
-						to='/'
-						className='flex md:flex-col md:items-center lg:flex-row'
-						onClick={handleMenuHide}
-					>
-						<img
-							src={Logo}
-							alt='Person on a laptop'
-							className='w-12 mr-2 md:mr-0 md:w-24 md:mb-4 lg:mr-4'
-						/>
-						<div className='flex flex-col items-center'>
-							<span className='font-serif text-primary text-lg tracking-wider transition ease-in-out duration-300 hover:text-accent md:hidden lg:block lg:text-3xl'>
-								Adam
-							</span>
-							<span className='font-serif text-primaryDark text-lg tracking-wider transition ease-in-out duration-300 hover:text-accent md:hidden lg:block lg:text-3xl'>
-								Sackfield
-							</span>
-						</div>
+				<nav className='flex flex-wrap items-center justify-between'>
+					<Link to='home' className='p-0 m-0'>
+						{/* <h1 className='h-full text-3xl bg-black py-2 px-4 text-white font-secondary underline uppercase'>
+							Adam Sackfield
+						</h1> */}
+						<img src={logo} alt='' className='w-64' />
 					</Link>
 
 					{/* Mobile Hamburger Menu - START */}
@@ -44,61 +32,70 @@ const Navbar = () => {
 						<Hamburger
 							rounded
 							toggled={menu}
-							color='#f57dff'
+							color='#FF5678'
 							toggle={toggleMenu}
 						/>
 					</div>
 					{/* Mobile Hamburger Menu - END */}
 
-					<nav
+					<div
 						className={`w-full md:flex md:items-center md:w-auto ${
 							menu ? '' : ' hidden'
 						}`}
 						id='menu'
 					>
-						<ul className='md:flex md:justify-between text-primaryLight'>
+						<ul className='text-center md:flex'>
 							<li>
-								<NavLink
-									className='p-4 text-center block font-serif tracking-wide transition ease-in-out duration-300 hover:text-accent md:text-2xl'
-									onClick={handleMenuHide}
-									to='/'
+								<Link
+									to='home'
+									className='p-4 block font-secondary uppercase text-2xl cursor-pointer tracking-wide transition ease-in-out duration-300 hover:text-blue'
+									onClick={handleMenuClose}
+									spy={true}
+									smooth={true}
+									offset={-70}
 								>
 									Home
-								</NavLink>
+								</Link>
 							</li>
-
 							<li>
-								<NavLink
-									className='p-4 text-center block font-serif tracking-wide transition ease-in-out duration-300 hover:text-accent md:text-2xl'
-									onClick={handleMenuHide}
-									to='/about'
+								<Link
+									to='about'
+									className='p-4 block font-secondary uppercase text-2xl cursor-pointer tracking-wide transition ease-in-out duration-300 hover:text-orange'
+									onClick={handleMenuClose}
+									spy={true}
+									smooth={true}
+									offset={-70}
 								>
-									About
-								</NavLink>
+									About Me
+								</Link>
 							</li>
-
 							<li>
-								<NavLink
-									className='p-4 text-center block font-serif tracking-wide transition ease-in-out duration-300 hover:text-accent md:text-2xl'
-									onClick={handleMenuHide}
-									to='/work'
+								<Link
+									to='work'
+									className='p-4 block font-secondary uppercase text-2xl cursor-pointer tracking-wide transition ease-in-out duration-300 hover:text-green'
+									onClick={handleMenuClose}
+									spy={true}
+									smooth={true}
+									offset={-70}
 								>
 									Work
-								</NavLink>
+								</Link>
 							</li>
-
 							<li>
-								<NavLink
-									className='p-4 text-center block font-serif tracking-wide transition ease-in-out duration-300 hover:text-accent md:text-2xl'
-									onClick={handleMenuHide}
-									to='/contact'
+								<Link
+									to='contact'
+									className='p-4 block font-secondary uppercase text-2xl cursor-pointer tracking-wide transition ease-in-out duration-300 hover:text-pink'
+									onClick={handleMenuClose}
+									spy={true}
+									smooth={true}
+									offset={-70}
 								>
 									Contact
-								</NavLink>
+								</Link>
 							</li>
 						</ul>
-					</nav>
-				</div>
+					</div>
+				</nav>
 			</div>
 		</header>
 	);
