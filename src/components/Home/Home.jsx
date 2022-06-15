@@ -12,17 +12,37 @@ const Home = () => {
 					<div className='flex flex-col text-center lg:w-2/3 lg:text-left lg:pr-32'>
 						<div className='flex flex-col justify-center'>
 							<h1 className='text-6xl font-secondary uppercase font-bold tracking-wide pb-10'>
-								Junior Full-stack developer manchester, uk
+								Junior Full-stack developer manchester, UK
 							</h1>
 
 							<div className='md:hidden pb-6'>
-								<Button name='Get in Touch' color='bg-pink' size='medium' />
-								<Button name='GitHub' color='bg-blue' size='medium' />
+								<a href='mailto:adam@adamsackfield.uk'>
+									<Button name='Get in Touch' color='bg-pink' size='medium' />
+								</a>
+								<a
+									href='https://github.com/adampaulsackfield'
+									target='_blank'
+									rel='noreferrer'
+								>
+									<Button name='GitHub' color='bg-blue' size='medium' />
+								</a>
 							</div>
 
 							<div className='hidden md:block pb-6'>
-								<Button name='Get in Touch' color='bg-pink' size='extraLarge' />
-								<Button name='GitHub' color='bg-blue' size='extraLarge' />
+								<a href='mailto:adam@adamsackfield.uk'>
+									<Button
+										name='Get in Touch'
+										color='bg-pink'
+										size='extraLarge'
+									/>
+								</a>
+								<a
+									href='https://github.com/adampaulsackfield'
+									target='_blank'
+									rel='noreferrer'
+								>
+									<Button name='GitHub' color='bg-blue' size='extraLarge' />
+								</a>
 							</div>
 						</div>
 
@@ -38,36 +58,6 @@ const Home = () => {
 					</div>
 
 					<div className='lg:w-1/3'>
-						{/* <form action='' className='p-2'>
-							<h1 className='text-5xl text-black font-bold -rotate-1 font-secondary uppercase tracking-wider text-center pb-4'>
-								Message Me
-							</h1>
-
-							<input
-								type='text'
-								placeholder='Name...'
-								className='w-full py-2 px-2 my-2 rounded-md outline-none border-4 border-black -rotate-1 drop-shadow-btn transition ease-in duration-200 focus:border-pink'
-							/>
-
-							<input
-								type='text'
-								placeholder='Email...'
-								className='w-full py-2 px-2 my-2 rounded-md outline-none border-4 border-black -rotate-1 drop-shadow-btn transition ease-in duration-200 focus:border-pink'
-							/>
-
-							<textarea
-								type='text'
-								placeholder='Message...'
-								rows={6}
-								className='w-full py-2 px-2 my-2 rounded-md outline-none border-4 border-black -rotate-1 drop-shadow-btn transition ease-in duration-200 focus:border-pink mb-6'
-							/>
-
-							<div className='flex justify-around'>
-								<Button name='Send Message' color='bg-orange' size='medium' />
-								<Button name='Clear' color='bg-green' size='medium' />
-							</div>
-						</form> */}
-
 						<img
 							src={Hero}
 							alt='Graphic of a man at a computer'

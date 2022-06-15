@@ -36,7 +36,7 @@ const Work = () => {
 
 	return (
 		<section id='work' className='min-h-screen bg-background text-black'>
-			<div className='container mx-auto flex flex-col'>
+			<div className='container mx-auto flex flex-col pt-20'>
 				<h1 className='text-center text-6xl tracking-wider font-secondary text-pink underline pb-2 mb-4'>
 					My Work
 				</h1>
