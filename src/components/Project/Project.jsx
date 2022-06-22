@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../Utils/Button';
 
-const colors = ['pink', 'blue', 'orange', 'purple', 'green', 'yellow'];
+import { colors } from '../../colors';
 
 const Project = ({ project }) => {
 	return (

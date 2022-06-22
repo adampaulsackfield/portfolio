@@ -32,84 +32,30 @@ const About = () => {
 					<div className='md:mt-20 lg:w-1/4'>
 						<ul className='grid grid-cols-3 gap-2 md:grid-cols-4 lg:grid-cols-2 lg:pl-10'>
 							<li>
-								<Skill name='html5' color='bg-pink' />
+								<Skill name='html5' />
 							</li>
 							<li>
-								<Skill name='css3' color='bg-blue' />
+								<Skill name='css3' />
 							</li>
 							<li>
-								<Skill name='javascript' color='bg-green' />
+								<Skill name='javascript' />
 							</li>
 							<li>
-								<Skill name='nodejs' color='bg-orange' />
+								<Skill name='nodejs' />
 							</li>
 							<li>
-								<Skill name='react' color='bg-purple' />
+								<Skill name='react' />
 							</li>
 							<li>
-								<Skill name='mongo' color='bg-yellow' />
+								<Skill name='mongo' />
 							</li>
 							<li>
-								<Skill name='sql' color='bg-orange' />
+								<Skill name='sql' />
 							</li>
 							<li>
-								<Skill name='typescript' color='bg-pink' />
+								<Skill name='typescript' />
 							</li>
 						</ul>
-						{/* <div className='text-center lg:text-right'>
-							<h1 className='text-4xl tracking-wider pb-6'>
-								Where to get in touch
-							</h1>
-
-							<div className='flex flex-col space-y-3'>
-								<p className='text-lg'>
-									<span className='text-pink text-lg'>Name: </span>
-									<Button
-										name='Adam Sackfield'
-										color='bg-orange'
-										size='small'
-									/>
-								</p>
-
-								<p className='text-lg'>
-									<span className='text-pink text-lg'>Location: </span>
-
-									<Button name='Manchester, UK' color='bg-green' size='small' />
-								</p>
-
-								<p className='text-lg'>
-									<span className='text-pink text-lg'>Email: </span>
-									<Button
-										name='adam@adamsackfield.uk'
-										color='bg-blue'
-										size='small'
-									/>
-								</p>
-
-								<p className='text-lg'>
-									<span className='text-pink text-lg'>Available: </span>
-									<Button name='Hire Me' color='bg-pink' size='small' />
-								</p>
-							</div>
-
-							<div className='pt-6'>
-								<ul className='flex flex-row justify-center space-x-6'>
-									<li>
-										<AiFillGithub className='text-4xl' />
-									</li>
-									<li>
-										<AiFillSlackCircle className='text-4xl' />
-									</li>
-									<li>
-										<AiFillMail className='text-4xl' />
-									</li>
-								</ul>
-
-								<p className='py-10'>
-									<Button name='Download Resume' color='bg-blue' size='large' />
-								</p>
-							</div>
-						</div> */}
 					</div>
 				</div>
 			</div>

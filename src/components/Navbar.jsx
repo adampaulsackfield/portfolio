@@ -21,9 +21,6 @@ const Navbar = () => {
 			<div className='container mx-auto'>
 				<nav className='flex flex-wrap items-center justify-between'>
 					<Link to='home' className='p-0 m-0'>
-						{/* <h1 className='h-full text-3xl bg-black py-2 px-4 text-white font-secondary underline uppercase'>
-							Adam Sackfield
-						</h1> */}
 						<img src={logo} alt='' className='w-64' />
 					</Link>
 

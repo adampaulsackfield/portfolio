@@ -4,6 +4,8 @@ import { FaCss3, FaNodeJs, FaReact } from 'react-icons/fa';
 import { SiJavascript, SiPostgresql, SiTypescript } from 'react-icons/si';
 import { DiMongodb } from 'react-icons/di';
 
+import { colors } from '../../colors';
+
 const iconRef = {
 	html5: <AiFillHtml5 className='text-3xl' />,
 	css3: <FaCss3 className='text-3xl' />,
@@ -15,10 +17,12 @@ const iconRef = {
 	typescript: <SiTypescript className='text-3xl' />,
 };
 
-const Skill = ({ name, color }) => {
+const Skill = ({ name }) => {
 	return (
 		<div
-			className={`${color} font-secondary uppercase border-4 rounded mr-2 drop-shadow-btn flex flex-col justify-center items-center p-4`}
+			className={`bg-${
+				colors[Math.floor(Math.random() * colors.length)]
+			} font-secondary uppercase border-4 rounded mr-2 drop-shadow-btn flex flex-col justify-center items-center p-4 hover:animate-bounce`}
 		>
 			{iconRef[name]}
 			<p className='text-lg tracking-wider mt-2'>{name}</p>
