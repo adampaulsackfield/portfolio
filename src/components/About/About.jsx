@@ -32,28 +32,28 @@ const About = () => {
 					<div className='md:mt-20 lg:w-1/4'>
 						<ul className='grid grid-cols-3 gap-2 md:grid-cols-4 lg:grid-cols-2 lg:pl-10'>
 							<li>
-								<Skill name='html5' />
+								<Skill name='html5' color='pink' />
 							</li>
 							<li>
-								<Skill name='css3' />
+								<Skill name='css3' color='blue' />
 							</li>
 							<li>
-								<Skill name='javascript' />
+								<Skill name='javascript' color='green' />
 							</li>
 							<li>
-								<Skill name='nodejs' />
+								<Skill name='nodejs' color='orange' />
 							</li>
 							<li>
-								<Skill name='react' />
+								<Skill name='react' color='purple' />
 							</li>
 							<li>
-								<Skill name='mongo' />
+								<Skill name='mongo' color='yellow' />
 							</li>
 							<li>
-								<Skill name='sql' />
+								<Skill name='sql' color='orange' />
 							</li>
 							<li>
-								<Skill name='typescript' />
+								<Skill name='typescript' color='pink' />
 							</li>
 						</ul>
 					</div>
