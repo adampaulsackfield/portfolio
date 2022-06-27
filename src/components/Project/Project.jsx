@@ -16,7 +16,7 @@ const Project = ({ project }) => {
 						return (
 							<p
 								className={`px-1 py-1 bg-${
-									colors[Math.floor(Math.random() * colors.length)]
+									colors[Math.floor(Math.random() * 3)]
 								} rounded-lg text-md border-4 font-secondary`}
 							>
 								{technology}

@@ -44,16 +44,16 @@ const About = () => {
 								<Skill name='nodejs' color='orange' />
 							</li>
 							<li>
-								<Skill name='react' color='purple' />
+								<Skill name='react' color='pink' />
 							</li>
 							<li>
-								<Skill name='mongo' color='yellow' />
+								<Skill name='mongo' color='blue' />
 							</li>
 							<li>
-								<Skill name='sql' color='orange' />
+								<Skill name='sql' color='green' />
 							</li>
 							<li>
-								<Skill name='typescript' color='pink' />
+								<Skill name='typescript' color='orange' />
 							</li>
 						</ul>
 					</div>
