@@ -1,0 +1,50 @@
+@use './variables' as *;
+
+* {
+	font-family: $text-sans;
+	font-weight: 300;
+}
+
+// Layout
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+h1,
+h2,
+p,
+span,
+a {
+	color: $text-white;
+}
+
+section {
+	min-height: 100vh;
+}
+
+// Typography
+body {
+	background-color: $background-dark;
+}
+
+h1,
+h2 {
+	font-family: $text-serif;
+	font-weight: 400;
+	font-size: 2rem;
+	margin: 2rem 0;
+}
+
+p {
+	line-height: 32px;
+}
+
+// Helper Classes
+.hide-mobile {
+	display: none;
+}
