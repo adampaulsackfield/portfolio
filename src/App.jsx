@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Components
 import Navbar from './components/Navbar/Navbar';
-import Home from './containers/Home/Home';
+import Layout from './components/Layout/Layout';
 
 function App() {
 	return (
@@ -13,10 +13,7 @@ function App() {
 			<Navbar />
 
 			<Routes>
-				<Route to='/home' element={<Home />} />
-				<Route to='/skills' element={<Home />} />
-				<Route to='/portfolio' element={<Home />} />
-				<Route to='/contact' element={<Home />} />
+				<Route path='/' element={<Layout />} />
 			</Routes>
 		</BrowserRouter>
 	);

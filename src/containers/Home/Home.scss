@@ -1,0 +1,140 @@
+@use '../../assets/sass/variables' as *;
+
+.home {
+	display: grid;
+	grid-template-columns: repeat(11, 1fr);
+	padding: 0 2rem;
+
+	&__details {
+		grid-column: span 12;
+		grid-row: 2;
+
+		h1 {
+			font-size: 2.5rem;
+
+			span {
+				color: $accent;
+			}
+		}
+
+		p {
+			padding: 1.5rem 0;
+			color: $text-grey-dark;
+			font-weight: 300;
+		}
+
+		button {
+			display: flex;
+			align-items: center;
+			background: transparent;
+			border: none;
+			color: $text-white;
+			font-size: 1rem;
+			font-weight: 300;
+
+			margin-top: 2rem;
+
+			i {
+				padding-left: 1rem;
+				font-size: 1rem;
+				color: $accent;
+			}
+		}
+	}
+
+	img {
+		max-width: 250px;
+	}
+
+	&__image {
+		display: none;
+	}
+
+	&__socials {
+		display: none;
+	}
+}
+
+// ! TABLET BREAKPOINT START
+@media screen and (min-width: $tablet-breakpoint) {
+	body::before {
+		height: 55vh;
+		width: 50vw;
+	}
+
+	.home {
+		grid-template-rows: 1fr 1fr;
+
+		padding: 0;
+		margin-top: 2rem;
+
+		&__details {
+			padding: 0 2rem;
+		}
+
+		&__image {
+			display: inherit;
+			grid-column: 5 / 8;
+		}
+
+		&__socials {
+			margin: auto 0;
+			width: 2rem;
+			grid-column: -1;
+
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
+			gap: 1rem;
+			padding: 1rem 1.8rem;
+			background-color: $accent;
+
+			&--icon {
+				font-size: 2rem;
+				color: $background-light;
+
+				&:hover {
+					color: rgba($color: $background-light, $alpha: 0.8);
+				}
+			}
+
+			&--text {
+				font-size: 1.2rem;
+				font-weight: bold;
+				color: $background-light;
+			}
+
+			i:hover,
+			p:hover {
+				color: rgba($color: $background-light, $alpha: 0.8);
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+	body::before {
+		height: 90vh;
+		width: 30vw;
+	}
+
+	.home {
+		grid-template-rows: 1fr;
+		align-items: center;
+
+		margin-top: 0;
+		&__details {
+			grid-column: 2 / 8;
+			grid-row: 1;
+		}
+
+		&__image {
+			grid-column: 9 / 10;
+		}
+
+		&__socials {
+			grid-column: -1;
+		}
+	}
+}
