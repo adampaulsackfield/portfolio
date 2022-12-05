@@ -1,0 +1,25 @@
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;700&family=Inter:wght@100;400;700&display=swap');
+
+$text-sans: 'Inter', sans-serif;
+$text-serif: 'Cormorant', serif;
+$text-white: #fff;
+$text-grey-light: rgba(255, 255, 255, 0.75);
+$text-grey-dark: rgba(255, 255, 255, 0.5);
+$text-color-dark: #1c1a27;
+
+// Theme
+$background-dark: #1c1a27;
+$background-light: #2a2835; // Icons use this color too
+$background-banner: #2e2d38;
+$background-button-dark: #292734;
+$background-button-light: #474650;
+$accent: #ff4aae;
+$horizontal-rule: #373542;
+
+// Breakpoints
+$mobile-breakpoint: 320px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+$large-desktop-breakpoint: 1440px;
+$extra-large-desktop-breakpoint: 2560px;

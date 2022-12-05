@@ -1,0 +1,83 @@
+@use '../../assets/sass/variables' as *;
+
+.nav {
+	display: flex;
+	align-items: center;
+	height: 4rem;
+	padding: 0 2rem;
+
+	&__logo {
+		margin-right: auto;
+		font-family: $text-serif;
+		font-size: 2.5rem;
+		font-weight: 700;
+		letter-spacing: 2px;
+		color: $accent;
+	}
+
+	&__link {
+		display: none;
+		margin-right: 3rem;
+		font-family: $text-serif;
+		letter-spacing: 1px;
+
+		// Underline on hover.
+		position: relative;
+		padding: 8px 0;
+
+		// Using a :not() and :last-of-type pseudo selector so the underline effect isnt applied to the button
+		&:not(:last-of-type)::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			transform: scaleX(0);
+			bottom: 0;
+			left: 0;
+			background-color: $accent;
+			transform-origin: bottom right;
+			transition: 250ms ease-in-out;
+		}
+
+		&:hover::after {
+			transform: scaleX(1);
+			transform-origin: bottom left;
+		}
+	}
+
+	// Mobile Menu - Hamburger
+	&__menu {
+		div {
+			width: 20px;
+			height: 2px;
+			margin: 4px 0;
+			background-color: $accent;
+
+			&:nth-child(2) {
+				width: 9px;
+			}
+		}
+	}
+	// Get in Touch Button - Slight hover effect
+	.accent {
+		border: solid 1px $accent;
+		padding: 0.5rem 1.25rem;
+
+		transition: scale ease-in 300ms;
+		animation: pulse 1000ms infinite ease-in;
+
+		&:hover {
+			scale: 1.1;
+		}
+	}
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+	.nav__link {
+		display: inherit;
+	}
+
+	.nav__menu {
+		display: none;
+	}
+}
