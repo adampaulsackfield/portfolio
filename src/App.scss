@@ -1,3 +1,12 @@
+@use './assets/sass/variables' as *;
+
 @use './assets/sass/reset';
 @use './assets/sass/base';
 @use './assets/sass/animations';
+
+.header {
+	width: 100vw;
+	position: fixed;
+	z-index: 1000;
+	background-color: rgba($background-dark, 0.8);
+}
