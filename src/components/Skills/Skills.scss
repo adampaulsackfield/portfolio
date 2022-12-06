@@ -1,0 +1,73 @@
+@use '../../assets/sass/variables' as *;
+
+.skills {
+	text-align: center;
+	padding: 0 2rem;
+
+	&__content {
+		&--text {
+			color: $text-grey-dark;
+		}
+	}
+
+	&__icons {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		margin-top: 2rem;
+
+		&--wrapper {
+			width: 40%;
+		}
+
+		&--icon {
+			font-size: 4rem;
+			opacity: 0.5;
+		}
+
+		&--text {
+			font-size: 1rem;
+			color: $accent;
+			font-family: $text-serif;
+		}
+	}
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+	.skills {
+		display: flex;
+		flex-direction: column;
+		max-width: 1000px;
+		margin: 0 auto;
+		justify-content: center;
+
+		&__content {
+			&--text {
+				text-align: left;
+			}
+		}
+
+		&__icons {
+			gap: 4rem;
+
+			&--wrapper {
+				width: auto;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+	.skills {
+		&__content {
+			display: flex;
+			align-items: center;
+
+			&--header {
+				margin-right: 4rem;
+				font-size: 2.5rem;
+			}
+		}
+	}
+}
