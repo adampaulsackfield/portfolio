@@ -1,0 +1,6 @@
+@use '../../assets/sass/variables' as *;
+
+hr {
+	margin-bottom: 1rem;
+	color: $horizontal-rule;
+}

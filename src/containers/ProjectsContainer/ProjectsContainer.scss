@@ -1,0 +1,91 @@
+@use '../../assets//sass/variables' as *;
+@use '../../assets/sass/mixins' as *;
+
+.projects {
+	padding: 0 2rem;
+	@include gradient;
+
+	&__header {
+		margin-bottom: 2rem;
+	}
+
+	&__filter {
+		span {
+			color: $text-grey-dark;
+
+			&:not(:last-child) {
+				margin-right: 1rem;
+			}
+		}
+
+		&--active {
+			padding-bottom: 0.5rem;
+			border-bottom: solid 2px $accent;
+			color: $text-white !important;
+			font-weight: 700;
+			letter-spacing: 2px;
+		}
+	}
+}
+
+.gallery {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+	.projects {
+		&__header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+
+		&__filter {
+			a:not(:last-child) {
+				margin-right: 0.5rem;
+			}
+		}
+
+		.show-tablet {
+			display: block;
+		}
+	}
+
+	.gallery {
+		flex-direction: row;
+		flex-wrap: wrap;
+
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+	.projects {
+		&__header {
+			width: 1100px;
+			margin: 0 auto;
+		}
+
+		.show-desktop {
+			display: block;
+		}
+	}
+
+	.gallery {
+		h1 {
+			font-size: 1.25rem;
+			font-weight: 300;
+			margin: 0.75rem 0;
+		}
+		button {
+			font-size: 0.5rem;
+		}
+
+		img {
+			max-width: 250px;
+		}
+	}
+}
