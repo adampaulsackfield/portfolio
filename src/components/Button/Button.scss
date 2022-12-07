@@ -1,0 +1,12 @@
+@use '../../assets/sass/variables' as *;
+
+.project__button {
+	background-color: $background-button-dark;
+	border: none;
+	padding: 0.6rem 1rem;
+	border-radius: 1rem;
+	color: $text-grey-dark;
+	font-weight: 300;
+	font-size: 0.5rem;
+	letter-spacing: 1px;
+}
