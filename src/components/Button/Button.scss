@@ -3,10 +3,12 @@
 .project__button {
 	background-color: $background-button-dark;
 	border: none;
-	padding: 0.6rem 1rem;
+	padding: 0.2rem 0.4rem;
 	border-radius: 1rem;
-	color: $text-grey-dark;
-	font-weight: 300;
-	font-size: 0.5rem;
-	letter-spacing: 1px;
+	color: $accent;
+	letter-spacing: 2px;
+
+	&:not(:last-of-type) {
+		margin-right: 6px;
+	}
 }

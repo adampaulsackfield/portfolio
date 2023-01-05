@@ -1,7 +1,7 @@
 export const projects = [
 	{
 		title: 'FD Portfolio',
-		img: './images/image11.png',
+		img: './images/fd-portfolio.png',
 		tags: ['HTML', 'CSS', 'JavaScript'],
 		link: 'https://github.com/adampaulsackfield',
 		type: 'front-end',

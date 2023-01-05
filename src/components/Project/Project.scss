@@ -4,3 +4,21 @@ hr {
 	margin-bottom: 1rem;
 	color: $horizontal-rule;
 }
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX((0));
+}
+
+.project {
+	&__image {
+		width: 800px;
+	}
+
+	&__header {
+		font-size: 1.25rem;
+		font-weight: 300;
+		margin: 0.75rem 0;
+	}
+}
