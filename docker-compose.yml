@@ -5,9 +5,10 @@ services:
     container_name: react-portfolio
     build: .
     volumes:
-      - './src:/app/src'
-      - ./public/assets:/app/public/assets
-      - /app/node_modules
+      - './src:/src'
+      - ./public/assets:/public/assets
+      - ./public/images:/public/images
+      - /node_modules
     ports:
       - 3000:3000
     stdin_open: true
