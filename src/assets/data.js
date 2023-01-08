@@ -40,4 +40,12 @@ export const projects = [
 		live: '',
 		type: 'front-end',
 	},
+
+	{
+		title: 'Hangman',
+		img: './images/punk-api.jpg',
+		source: 'https://github.com/adampaulsackfield/beer-project',
+		live: '',
+		type: 'front-end',
+	},
 ];
