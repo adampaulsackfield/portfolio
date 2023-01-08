@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  react-portfolio:
+    container_name: react-portfolio
+    build: .
+    volumes:
+      - './src:/app/src'
+      - ./public/assets:/app/public/assets
+      - /app/node_modules
+    ports:
+      - 3000:3000
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: npm start
