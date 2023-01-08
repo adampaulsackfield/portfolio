@@ -8,8 +8,10 @@ import {
 	FaSass,
 	FaReact,
 	FaNodeJs,
+	FaJava,
+	FaDocker,
 } from 'react-icons/fa';
-import { SiJest, SiCypress } from 'react-icons/si';
+import { SiJest, SiCypress, SiTypescript } from 'react-icons/si';
 
 const Skills = () => {
 	return (
@@ -19,9 +21,9 @@ const Skills = () => {
 					<h1 className='skills__content--header'>Skills</h1>
 
 					<p className='skills__content--text'>
-						Egestas dictumst enim dui ante nisl risus commodo. Pellentesque
-						dignissim praesent purus in neque erat et. Cras donec ut orci eget
-						neque bibendum cras. Vitae, ultricies arcu pretium duis.
+						As a software engineer, I have developed a range of technical skills
+						including and I am constantly seeking out opportunities to learn and
+						expand my abilities. Here are a few of my skills
 					</p>
 				</article>
 
@@ -52,6 +54,11 @@ const Skills = () => {
 					</div>
 
 					<div className='skills__icons--wrapper'>
+						<SiTypescript />
+						<p className='skills__icons--text'>JavaScript</p>
+					</div>
+
+					<div className='skills__icons--wrapper'>
 						<FaNodeJs />
 						<p className='skills__icons--text'>NodeJS</p>
 					</div>
@@ -69,6 +76,16 @@ const Skills = () => {
 					<div className='skills__icons--wrapper'>
 						<SiCypress />
 						<p className='skills__icons--text'>Cypress</p>
+					</div>
+
+					<div className='skills__icons--wrapper'>
+						<FaJava />
+						<p className='skills__icons--text'>Java</p>
+					</div>
+
+					<div className='skills__icons--wrapper'>
+						<FaDocker />
+						<p className='skills__icons--text'>Docker</p>
 					</div>
 				</article>
 			</section>

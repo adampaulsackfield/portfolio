@@ -2,24 +2,42 @@ export const projects = [
 	{
 		title: 'FD Portfolio',
 		img: './images/fd-portfolio.png',
-		tags: ['HTML', 'CSS', 'JavaScript'],
-		link: 'https://github.com/adampaulsackfield',
+		source: 'https://github.com/adampaulsackfield/adampaulsackfield.github.io',
+		live: 'https://adampaulsackfield.github.io/',
 		type: 'front-end',
 	},
 
 	{
 		title: 'Calculator',
-		img: './images/image12.png',
-		tags: ['HTML', 'CSS', 'JavaScript', 'Jest', 'Cypress'],
-		link: 'https://github.com/adampaulsackfield',
+		img: './images/calculator.jpg',
+		source:
+			'https://github.com/adampaulsackfield/adampaulsackfield.github.io-calculator',
+		live: 'https://adampaulsackfield.github.io/adampaulsackfield.github.io-calculator/',
 		type: 'front-end',
 	},
 
 	{
 		title: 'Snake',
-		img: './images/image10.png',
-		tags: ['HTML', 'CSS', 'JavaScript'],
-		link: 'https://github.com/adampaulsackfield',
+		img: './images/snake.jpg',
+		source:
+			'https://github.com/adampaulsackfield/adampaulsackfield.github.io-snake',
+		live: 'https://adampaulsackfield.github.io/adampaulsackfield.github.io-snake/',
 		type: 'full-stack',
+	},
+
+	{
+		title: 'Ticket Tracker',
+		img: './images/ticket-tracker.jpg',
+		source: 'https://github.com/adampaulsackfield/ticket-tracker',
+		live: 'https://adampaulsackfield.github.io/ticket-tracker/',
+		type: 'front-end',
+	},
+
+	{
+		title: 'Punk API',
+		img: './images/punk-api.jpg',
+		source: 'https://github.com/adampaulsackfield/beer-project',
+		live: '',
+		type: 'front-end',
 	},
 ];

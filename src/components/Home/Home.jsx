@@ -1,4 +1,4 @@
-import profileImage from '../../assets/images/unsplash_rriAI0nhcbc.png';
+import profileImage from '../../assets/images/profile.jpeg';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 
@@ -21,12 +21,15 @@ const Home = () => {
 					<span>Junior Software Engineer</span>
 				</h1>
 				<p>
-					Hi, I'm Adam. Egestas dictumst enim dui ante nisl risus commodo.
-					Pellentesque dignissim praesent purus in neque erat et. Cras donec ut
-					orci eget neque bibendum cras. Vitae, ultricies arcu pretium duis.
+					As a junior software engineer from Manchester, UK, I am eager to put
+					my skills and knowledge to work for a dynamic and innovative company.
+					With a dedication to continuous learning and a passion for
+					problem-solving, I am confident in my ability to deliver high-quality
+					software solutions. I am excited to join a team where I can grow and
+					make a meaningful impact.
 				</p>
 				<button>
-					Scroll Down
+					<a href='#skills'>Scroll Down</a>
 					<i className='fa fa-circle-down'></i>
 				</button>
 			</article>
@@ -50,6 +53,7 @@ const Home = () => {
 
 				<a href='/home'>
 					<p className='home__socials--text'>CV</p>
+					{/* TODO */}
 				</a>
 			</aside>
 		</section>

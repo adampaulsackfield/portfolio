@@ -1,7 +1,7 @@
 @use '../../assets/sass/variables' as *;
 
 hr {
-	margin-bottom: 1rem;
+	margin: 1rem 0;
 	color: $horizontal-rule;
 }
 
@@ -12,13 +12,56 @@ hr {
 }
 
 .project {
-	&__image {
-		width: 800px;
-	}
+	display: flex;
+	flex-direction: column;
 
 	&__header {
-		font-size: 1.25rem;
+		font-size: 1.5rem;
 		font-weight: 300;
 		margin: 0.75rem 0;
+	}
+
+	&__image {
+		max-width: 100%;
+	}
+
+	&__links {
+		margin: 2rem 0;
+		text-align: center;
+
+		&-link {
+			background-color: $background-button-dark;
+			border: none;
+			padding: 0.5rem 0.8rem;
+			border-radius: 1rem;
+			color: $accent;
+			letter-spacing: 2px;
+			transition: all 200ms ease;
+			cursor: pointer;
+
+			&:hover {
+				opacity: 0.7;
+			}
+
+			&:nth-child(1) {
+				margin-right: 1rem;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+	.project {
+		&__image {
+			max-width: 300px;
+		}
+	}
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+	.project {
+		&__image {
+			max-width: 400px;
+		}
 	}
 }
