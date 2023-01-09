@@ -10,7 +10,7 @@ services:
       - ./public/images:/public/images
       - /node_modules
     ports:
-      - 3000:80
+      - 80:3000
     stdin_open: true
     environment:
       - CHOKIDAR_USEPOLLING=true
