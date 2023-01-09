@@ -53,7 +53,7 @@ hr {
 @media screen and (min-width: $tablet-breakpoint) {
 	.project {
 		&__image {
-			max-width: 300px;
+			max-width: 250px;
 		}
 	}
 }
@@ -61,7 +61,7 @@ hr {
 @media screen and (min-width: $desktop-breakpoint) {
 	.project {
 		&__image {
-			max-width: 400px;
+			max-width: 500px;
 		}
 	}
 }

@@ -9,14 +9,14 @@ import Footer from '../../components/Footer/Footer';
 
 const LayoutContainer = () => {
 	return (
-		<>
+		<div className='container'>
 			<Home />
 			<Skills />
 			<ProjectsContainer />
 			<Journey />
 			<Contact />
 			<Footer />
-		</>
+		</div>
 	);
 };
 
