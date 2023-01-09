@@ -1,0 +1,30 @@
+@use '../../assets/sass/variables' as *;
+
+.footer-background {
+	margin-top: 4rem;
+	width: 100vw;
+
+	background-color: $accent;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	padding: 0 2rem;
+	// @include gradient;
+
+	h1,
+	p {
+		color: $text-color-dark;
+	}
+
+	h1 {
+		margin-left: auto;
+	}
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+	.footer {
+		padding: 0 2rem;
+	}
+}

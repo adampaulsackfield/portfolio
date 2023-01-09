@@ -43,7 +43,7 @@ export const projects = [
 
 	{
 		title: 'Hangman',
-		img: './images/punk-api.jpg',
+		img: './images/hangman.jpg',
 		source: 'https://github.com/adampaulsackfield/beer-project',
 		live: '',
 		type: 'front-end',

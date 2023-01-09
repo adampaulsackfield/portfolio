@@ -1,0 +1,67 @@
+@use '../../assets/sass/variables' as *;
+
+.contact {
+	width: 90vw;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	background-color: $background-light;
+	padding: 1rem;
+
+	&__header {
+		font-size: 1.5rem;
+		font-weight: 500;
+
+		&--accent {
+			color: $accent;
+		}
+	}
+
+	&__text {
+		color: rgba(255, 255, 255, 0.75);
+		font-size: 1rem;
+		font-weight: 300;
+		line-height: 25px;
+		margin-bottom: 2rem;
+	}
+
+	&__button {
+		padding: 0.8rem 1rem;
+		background-color: #474650;
+		border: none;
+		border-radius: 55px;
+		color: $accent;
+		font-weight: 300;
+
+		i {
+			color: $accent;
+			margin-left: 0.25rem;
+		}
+	}
+}
+@media screen and (min-width: $tablet-breakpoint) {
+	.contact {
+		width: 80vw;
+		margin: 0 auto;
+
+		&__header {
+			font-size: 2rem;
+		}
+
+		&__text {
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+	.contact {
+		width: 60vw;
+
+		&__header {
+			font-size: 3rem;
+		}
+	}
+}
