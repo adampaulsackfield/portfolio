@@ -6,6 +6,7 @@ import ProjectsContainer from '../ProjectsContainer/ProjectsContainer';
 import Journey from '../../components/Journey/Journey';
 import Contact from '../../components/Contact/Contact';
 import Footer from '../../components/Footer/Footer';
+import JourneysContainer from '../JourneysContainer/JourneysContainer';
 
 const LayoutContainer = () => {
 	return (
@@ -13,7 +14,7 @@ const LayoutContainer = () => {
 			<Home />
 			<Skills />
 			<ProjectsContainer />
-			<Journey />
+			<JourneysContainer />
 			<Contact />
 			<Footer />
 		</div>

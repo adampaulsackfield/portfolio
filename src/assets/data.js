@@ -42,6 +42,14 @@ export const projects = [
 	},
 
 	{
+		title: 'Todo API',
+		img: './images/api.jpg',
+		source: 'https://github.com/adampaulsackfield/beer-project',
+		live: '',
+		type: 'back-end',
+	},
+
+	{
 		title: 'Hangman',
 		img: './images/hangman.jpg',
 		source: 'https://github.com/adampaulsackfield/beer-project',

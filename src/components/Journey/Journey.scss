@@ -1,129 +1,52 @@
 @use '../../assets/sass/variables' as *;
 
-.journey {
-	display: grid;
-	padding: 0 2rem;
-	margin-bottom: 6rem;
+hr {
+	color: $horizontal-rule;
+	margin: 2rem 0 3rem;
+}
 
-	&__text {
-		p {
+.experience {
+	&__item {
+		&-header {
+			font-size: 1rem;
+			margin-bottom: 0;
+			font-weight: 700;
+		}
+
+		&-date {
+			font-size: 0.8rem;
+
+			margin-top: 0;
 			color: $text-grey-light;
 		}
-	}
 
-	&__image {
-		justify-self: center;
+		ul {
+			list-style: none;
 
-		img {
-			height: 400px;
-			margin: 2rem auto;
-		}
-	}
-
-	&__experience {
-		display: flex;
-		flex-direction: column;
-	}
-
-	hr {
-		color: $horizontal-rule;
-		margin: 2rem 0 3rem;
-	}
-
-	.experience {
-		&__item {
-			&-header {
-				font-size: 1rem;
-				margin-bottom: 0;
-				font-weight: 700;
-			}
-
-			&-date {
-				font-size: 0.8rem;
-
-				margin-top: 0;
+			li {
+				color: $text-white;
+				font-size: 0.75rem;
 				color: $text-grey-light;
+				padding: 0.5rem 0;
 			}
-
-			ul {
-				list-style: none;
-
-				li {
-					color: $text-white;
-					font-size: 0.75rem;
-					color: $text-grey-light;
-					padding: 0.5rem 0;
-				}
-				// Used to add different coloured bullet points using pseudo elements.
-				li::before {
-					content: '\2022';
-					color: $accent;
-					font-weight: bold;
-					display: inline-block;
-					width: 1rem;
-					margin-left: -1rem;
-				}
+			// Used to add different coloured bullet points using pseudo elements.
+			li::before {
+				content: '\2022';
+				color: $accent;
+				font-weight: bold;
+				display: inline-block;
+				width: 1rem;
+				margin-left: -1rem;
 			}
 		}
 	}
-
-	.accent {
-		color: $accent;
-		font-size: 1.25rem;
-		font-family: $text-serif;
-		font-weight: 300;
-		letter-spacing: 1px;
-		margin-bottom: 0;
-	}
 }
 
-// ! TABLET BREAKPOINT START
-@media screen and (min-width: $tablet-breakpoint) {
-	.journey {
-		grid-template-columns: repeat(8, 1fr);
-		grid-template-rows: 1fr 2fr 4fr;
-
-		&__header {
-			grid-column: 2 / 9;
-		}
-
-		&__text {
-			grid-column: 4 / 9;
-		}
-
-		&__experience {
-			grid-column: 4 / 9;
-		}
-
-		&__image {
-			display: none;
-		}
-	}
+.accent {
+	color: $accent;
+	font-size: 1.25rem;
+	font-family: $text-serif;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin-bottom: 0;
 }
-// ! TABLET BREAKPOINT END
-
-// ! DESKTOP BREAKPOINT START
-@media screen and (min-width: $desktop-breakpoint) {
-	.journey {
-		grid-template-rows: 1fr 2fr;
-		align-items: baseline;
-
-		&__header {
-			grid-column: 2 / 4;
-			font-size: 2.5rem;
-		}
-
-		&__text {
-			grid-column: 4 / 8;
-		}
-
-		&__experience {
-			grid-column: 4 / 8;
-		}
-
-		&__image {
-			display: none;
-		}
-	}
-}
-// ! DESKTOP BREAKPOINT END
