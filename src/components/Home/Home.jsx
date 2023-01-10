@@ -1,5 +1,5 @@
 import profileImage from '../../assets/images/profile.jpeg';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaArrowCircleDown } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 
 import './Home.scss';
@@ -20,6 +20,7 @@ const Home = () => {
 					I'm a <br />
 					<span>Junior Software Engineer</span>
 				</h1>
+
 				<p>
 					As a junior software engineer from Manchester, UK, I am eager to put
 					my skills and knowledge to work for a dynamic and innovative company.
@@ -28,9 +29,12 @@ const Home = () => {
 					software solutions. I am excited to join a team where I can grow and
 					make a meaningful impact.
 				</p>
+
 				<button>
-					<a href='#skills'>Scroll Down</a>
-					<i className='fa fa-circle-down'></i>
+					<a href='#skills' style={{ display: 'flex', alignItems: 'center' }}>
+						Scroll Down{' '}
+						<FaArrowCircleDown fill='#ff4aae' style={{ marginLeft: '12px' }} />
+					</a>
 				</button>
 			</article>
 
@@ -52,8 +56,9 @@ const Home = () => {
 				</a>
 
 				<a href='/home'>
-					<p className='home__socials--text'>CV</p>
-					{/* TODO */}
+					<a className='home__socials--text' href='./assets/CV.pdf' download>
+						CV
+					</a>
 				</a>
 			</aside>
 		</section>

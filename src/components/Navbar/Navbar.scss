@@ -16,8 +16,10 @@
 	}
 
 	&__link {
-		display: none;
+		// display: none;
 		margin-right: 3rem;
+		margin-right: 1rem;
+
 		font-family: $text-serif;
 		letter-spacing: 1px;
 
@@ -42,6 +44,10 @@
 		&:hover::after {
 			transform: scaleX(1);
 			transform-origin: bottom left;
+		}
+
+		&-show {
+			display: inherit;
 		}
 	}
 

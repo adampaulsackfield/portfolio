@@ -15,12 +15,14 @@ const Journey = ({ role: { header, date, bullets } }) => {
 						fill='#ff4aae'
 						style={{ float: 'right' }}
 						onClick={() => setShow(!show)}
+						onTouchStart={() => setShow(!show)}
 					/>
 				) : (
 					<FaCaretDown
 						fill='#ff4aae'
 						style={{ float: 'right' }}
 						onClick={() => setShow(!show)}
+						onTouchStart={() => setShow(!show)}
 					/>
 				)}
 			</h1>

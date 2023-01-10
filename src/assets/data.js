@@ -44,16 +44,24 @@ export const projects = [
 	{
 		title: 'Todo API',
 		img: './images/api.jpg',
-		source: 'https://github.com/adampaulsackfield/beer-project',
-		live: '',
+		source: 'https://github.com/adampaulsackfield/todo-app',
+		live: 'https://github.com/adampaulsackfield/todo-app',
 		type: 'back-end',
 	},
 
 	{
 		title: 'Hangman',
 		img: './images/hangman.jpg',
-		source: 'https://github.com/adampaulsackfield/beer-project',
-		live: '',
+		source: 'https://github.com/adampaulsackfield/hangman',
+		live: 'https://github.com/adampaulsackfield/hangman',
+		type: 'front-end',
+	},
+
+	{
+		title: 'Capital City Guesser',
+		img: './images/capitalcity.jpg',
+		source: 'https://github.com/adampaulsackfield/capital-guesser-game',
+		live: 'https://github.com/adampaulsackfield/capital-guesser-game',
 		type: 'front-end',
 	},
 ];

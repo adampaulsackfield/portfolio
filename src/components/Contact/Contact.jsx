@@ -1,4 +1,5 @@
 import './Contact.scss';
+import { FaPaperPlane } from 'react-icons/fa';
 
 const Contact = () => {
 	return (
@@ -8,13 +9,14 @@ const Contact = () => {
 			</h1>
 
 			<p className='contact__text'>
-				Ut fermentum vitae ut volutpat arcu, consectetur turpis etiam. Etiam
-				felis id nibh sed convallis et laoreet in. Bibendum pharetra ipsum,
-				mauris at eu, fusce imperdiet eget velit.
+				If you would like to work together, or just reach out for a chat then
+				click below.
 			</p>
 
 			<button className='contact__button'>
-				GET IN TOUCH <i className='fa-regular fa-paper-plane'></i>
+				<a href='mailto:adam@adamsackfield.uk'>
+					GET IN TOUCH <FaPaperPlane fill='#ff4aae' />
+				</a>
 			</button>
 		</article>
 	);
