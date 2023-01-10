@@ -12,6 +12,7 @@ services:
     ports:
       - 80:3000
     stdin_open: true
+    restart: 'unless-stopped'
     environment:
       - CHOKIDAR_USEPOLLING=true
     command: npm start

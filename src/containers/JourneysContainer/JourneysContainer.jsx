@@ -15,15 +15,18 @@ const JourneysContainer = () => {
 
 			<div className='journey__text'>
 				<p>
-					Ut fermentum vitae ut volutpat arcu, consectetur turpis etiam. Etiam
-					felis id nibh sed convallis et laoreet in. Bibendum pharetra ipsum,
-					mauris at eu, fusce imperdiet eget velit. Mattis id sed pretium
-					aliquet blandit eros, in.
+					As a technical specialist at Apple, I have developed strong
+					problem-solving and time management skills, as well as the ability to
+					work effectively with ambiguity. In addition to my experience at
+					Apple, I have also completed two boot-camps - one in software
+					engineering and another in cloud engineering - which have provided me
+					with a strong foundation in these areas.
 				</p>
 				<p>
-					Cum eget lobortis mattis eu dictum. Placerat tellus feugiat egestas mi
-					cursus metus gravida scelerisque. Viverra blandit vitae eget odio
-					morbi quam lectus iaculis.
+					I am confident in my ability to work with people, having given
+					one-to-many presentations and contributed to team projects. Overall,
+					my diverse skill set and experience make me a valuable asset in any
+					technical role.
 				</p>
 			</div>
 
