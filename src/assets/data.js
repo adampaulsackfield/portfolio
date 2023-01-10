@@ -45,7 +45,7 @@ export const projects = [
 		title: 'Todo API',
 		img: './images/api.jpg',
 		source: 'https://github.com/adampaulsackfield/todo-app',
-		live: 'https://github.com/adampaulsackfield/todo-app',
+		live: '',
 		type: 'back-end',
 	},
 
@@ -53,7 +53,7 @@ export const projects = [
 		title: 'Hangman',
 		img: './images/hangman.jpg',
 		source: 'https://github.com/adampaulsackfield/hangman',
-		live: 'https://github.com/adampaulsackfield/hangman',
+		live: '',
 		type: 'front-end',
 	},
 

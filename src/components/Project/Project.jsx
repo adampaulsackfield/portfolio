@@ -25,14 +25,16 @@ const Project = ({ project: { title, img, source, live, type } }) => {
 				>
 					View GitHub
 				</a>
-				<a
-					href={live}
-					className='project__links-link'
-					target='_blank'
-					rel='noreferrer'
-				>
-					View Live
-				</a>
+				{live !== '' && (
+					<a
+						href={live}
+						className='project__links-link'
+						target='_blank'
+						rel='noreferrer'
+					>
+						View Live
+					</a>
+				)}
 			</div>
 		</div>
 	);
