@@ -42,7 +42,7 @@ jobs:
         name: Deploy package to DigitalOcean
         uses: appleboy/ssh-action@master
         env: 
-          GITHUB_USERNAME: ${{ secrets.GITHUB_USERNAME }}
+          GITHUB_USERNAME: adampaulsackfield
           GITHUB_TOKEN: ${{  secrets.GITHUB_TOKEN }}
         with:
           host: ${{ secrets.HOST }}
