@@ -5,6 +5,7 @@ export const projects = [
 		source: 'https://github.com/adampaulsackfield/adampaulsackfield.github.io',
 		live: 'https://adampaulsackfield.github.io/',
 		type: 'front-end',
+		tags: ['HTML', 'CSS', 'SCSS', 'JavaScript'],
 	},
 
 	{
@@ -14,6 +15,7 @@ export const projects = [
 			'https://github.com/adampaulsackfield/adampaulsackfield.github.io-calculator',
 		live: 'https://adampaulsackfield.github.io/adampaulsackfield.github.io-calculator/',
 		type: 'front-end',
+		tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'State', 'Jest', 'Cypress'],
 	},
 
 	{
@@ -23,6 +25,7 @@ export const projects = [
 			'https://github.com/adampaulsackfield/adampaulsackfield.github.io-snake',
 		live: 'https://adampaulsackfield.github.io/adampaulsackfield.github.io-snake/',
 		type: 'full-stack',
+		tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'Canvas'],
 	},
 
 	{
@@ -31,6 +34,7 @@ export const projects = [
 		source: 'https://github.com/adampaulsackfield/ticket-tracker',
 		live: 'https://adampaulsackfield.github.io/ticket-tracker/',
 		type: 'front-end',
+		tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'React'],
 	},
 
 	{
@@ -39,6 +43,7 @@ export const projects = [
 		source: 'https://github.com/adampaulsackfield/beer-project',
 		live: '',
 		type: 'front-end',
+		tags: ['HTML', 'CSS', 'SCSS', 'TypeScript'],
 	},
 
 	{
@@ -47,6 +52,7 @@ export const projects = [
 		source: 'https://github.com/adampaulsackfield/todo-app',
 		live: '',
 		type: 'back-end',
+		tags: ['TypeScript', 'ExpressJS', 'SQL', 'Jest', 'Bcrypt'],
 	},
 
 	{
@@ -55,6 +61,7 @@ export const projects = [
 		source: 'https://github.com/adampaulsackfield/hangman',
 		live: '',
 		type: 'front-end',
+		tags: ['Java'],
 	},
 
 	{
@@ -63,5 +70,6 @@ export const projects = [
 		source: 'https://github.com/adampaulsackfield/capital-guesser-game',
 		live: 'https://github.com/adampaulsackfield/capital-guesser-game',
 		type: 'front-end',
+		tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'Canvas'],
 	},
 ];

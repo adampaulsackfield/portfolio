@@ -21,6 +21,21 @@ hr {
 		margin: 0.75rem 0;
 	}
 
+	&__tags {
+		list-style: none;
+		display: flex;
+		gap: 0.5rem;
+		margin: 4px 0 12px 0;
+
+		&-tag {
+			padding: 2px 4px;
+			font-size: 0.75rem;
+			color: white;
+			background-color: $text-grey-dark;
+			border-radius: 12px;
+		}
+	}
+
 	&__image {
 		max-width: 100%;
 	}
@@ -34,6 +49,7 @@ hr {
 			border: none;
 			padding: 0.5rem 0.8rem;
 			border-radius: 1rem;
+			border: solid 1px $accent;
 			color: $accent;
 			letter-spacing: 2px;
 			transition: all 200ms ease;
