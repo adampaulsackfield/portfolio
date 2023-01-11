@@ -6,8 +6,8 @@ on:
     - "main"
     
 jobs:
-  build: 
-    runs-on: debian-latest
+ build-debs:
+    runs-on: ubuntu-latest
     steps:
       -
         name: Checkout
