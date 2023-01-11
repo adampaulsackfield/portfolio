@@ -34,7 +34,7 @@ jobs:
         with:
           name: adampaulsackfield/portfolio/portfolio-image
           registry: docker.pkg.github.com
-          username: ${{ secrets.GITHUB_USERNAME }}
+          username: adampaulsackfield
           password: ${{ secrets.GITHUB_TOKEN }}
           dockerfile: Dockerfile
           tags: latest
