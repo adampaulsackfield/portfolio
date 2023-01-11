@@ -50,7 +50,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           envs: GITHUB_USERNAME, GITHUB_TOKEN
-          scripts: |
+          script: |
             docker stop $(docker ps -a -q)
             docker login docker.pkg.github.com -u $GITHUB_USERNAME -p GITHUB_TOKEN
             docker pull docker.pkg.github.com/adampaulsackfield/portfolio/portfolio-image:latest
