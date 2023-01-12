@@ -69,7 +69,7 @@ const Skills = () => {
 					</div>
 
 					<div className='skills__icons--wrapper'>
-						<SiJest fill='#474650' />
+						<SiJest fill='#ff0000' />
 						<p className='skills__icons--text'>Jest</p>
 					</div>
 
