@@ -3,11 +3,11 @@
 .nav {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	height: 4rem;
 	padding: 0 2rem;
 
 	&__logo {
-		margin-right: auto;
 		font-family: $text-serif;
 		font-size: 2.5rem;
 		font-weight: 700;
@@ -17,7 +17,6 @@
 
 	&__link {
 		display: none;
-		margin-right: 3rem;
 
 		font-family: $text-serif;
 		letter-spacing: 1px;
@@ -44,6 +43,10 @@
 			transform: scaleX(1);
 			transform-origin: bottom left;
 		}
+
+		&-show {
+			display: inherit;
+		}
 	}
 
 	// Mobile Menu - Hamburger
@@ -58,7 +61,47 @@
 				width: 9px;
 			}
 		}
+
+		&-hide {
+			display: none;
+		}
 	}
+
+	&-show {
+		flex-direction: column;
+	}
+
+	&__cross {
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+
+		&-hide {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+	.nav {
+		flex-direction: row;
+		height: 4rem;
+
+		&__logo {
+			margin-right: auto;
+		}
+
+		&__link {
+			display: inherit;
+			margin-right: 3rem;
+		}
+
+		&__menu {
+			display: none;
+		}
+	}
+
 	// Get in Touch Button - Slight hover effect
 	.accent {
 		border: solid 1px $accent;
@@ -70,15 +113,5 @@
 		&:hover {
 			scale: 1.1;
 		}
-	}
-}
-
-@media screen and (min-width: $tablet-breakpoint) {
-	.nav__link {
-		display: inherit;
-	}
-
-	.nav__menu {
-		display: none;
 	}
 }
