@@ -23,8 +23,8 @@ const Navbar = () => {
 				spy={true}
 				smooth={true}
 				offset={-70}
-				onClick={() => toggleMenu()}
-				onTouchStart={() => toggleMenu()}
+				onClick={() => showMenu(false)}
+				onTouchStart={() => showMenu(false)}
 			>
 				Home
 			</Link>
@@ -35,8 +35,8 @@ const Navbar = () => {
 				spy={true}
 				smooth={true}
 				offset={-70}
-				onClick={() => toggleMenu()}
-				onTouchStart={() => toggleMenu()}
+				onClick={() => showMenu(false)}
+				onTouchStart={() => showMenu(false)}
 			>
 				Skills
 			</Link>
@@ -47,8 +47,8 @@ const Navbar = () => {
 				spy={true}
 				smooth={true}
 				offset={-70}
-				onClick={() => toggleMenu()}
-				onTouchStart={() => toggleMenu()}
+				onClick={() => showMenu(false)}
+				onTouchStart={() => showMenu(false)}
 			>
 				Portfolio
 			</Link>
@@ -59,8 +59,8 @@ const Navbar = () => {
 				spy={true}
 				smooth={true}
 				offset={-70}
-				onClick={() => toggleMenu()}
-				onTouchStart={() => toggleMenu()}
+				onClick={() => showMenu(false)}
+				onTouchStart={() => showMenu(false)}
 			>
 				Get in Touch
 			</Link>
