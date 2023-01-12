@@ -29,62 +29,62 @@ const Skills = () => {
 
 				<article className='skills__icons'>
 					<div className='skills__icons--wrapper'>
-						<FaGitAlt />
+						<FaGitAlt fill='#474650' />
 						<p className='skills__icons--text'>Git</p>
 					</div>
 
 					<div className='skills__icons--wrapper'>
-						<FaHtml5 />
+						<FaHtml5 fill='#474650' />
 						<p className='skills__icons--text'>HTML5</p>
 					</div>
 
 					<div className='skills__icons--wrapper'>
-						<FaCss3 />
+						<FaCss3 fill='#474650' />
 						<p className='skills__icons--text'>CSS3</p>
 					</div>
 
 					<div className='skills__icons--wrapper'>
-						<FaSass color='#ff0000' />
+						<FaSass fill='#474650' />
 						<p className='skills__icons--text'>SCSS</p>
 					</div>
 
 					<div className='skills__icons--wrapper'>
-						<FaJs />
+						<FaJs fill='#474650' />
 						<p className='skills__icons--text'>JavaScript</p>
 					</div>
 
 					<div className='skills__icons--wrapper'>
-						<SiTypescript />
+						<SiTypescript fill='#474650' />
 						<p className='skills__icons--text'>JavaScript</p>
 					</div>
 
 					<div className='skills__icons--wrapper'>
-						<FaNodeJs />
+						<FaNodeJs fill='#474650' />
 						<p className='skills__icons--text'>NodeJS</p>
 					</div>
 
 					<div className='skills__icons--wrapper'>
-						<FaReact />
+						<FaReact fill='#474650' />
 						<p className='skills__icons--text'>React</p>
 					</div>
 
 					<div className='skills__icons--wrapper'>
-						<SiJest />
+						<SiJest fill='#474650' />
 						<p className='skills__icons--text'>Jest</p>
 					</div>
 
 					<div className='skills__icons--wrapper'>
-						<SiCypress />
+						<SiCypress fill='#474650' />
 						<p className='skills__icons--text'>Cypress</p>
 					</div>
 
 					<div className='skills__icons--wrapper'>
-						<FaJava />
+						<FaJava fill='#474650' />
 						<p className='skills__icons--text'>Java</p>
 					</div>
 
 					<div className='skills__icons--wrapper'>
-						<FaDocker />
+						<FaDocker fill='#474650' />
 						<p className='skills__icons--text'>Docker</p>
 					</div>
 				</article>
