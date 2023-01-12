@@ -3,13 +3,30 @@ import './Navbar.scss';
 import { ImCross } from 'react-icons/im';
 
 import { Link } from 'react-scroll';
+import { useEffect } from 'react';
 
 const Navbar = () => {
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 	const [menu, showMenu] = useState(false);
 
 	const toggleMenu = () => {
 		showMenu(!menu);
 	};
+
+	useEffect(() => {
+		const handleWindowResize = () => {
+			setWindowWidth(window.innerWidth);
+			if (windowWidth > 768) {
+				showMenu(false);
+			}
+		};
+
+		window.addEventListener('resize', handleWindowResize);
+
+		return () => {
+			window.removeEventListener('resize', handleWindowResize);
+		};
+	});
 
 	return (
 		<nav className={`${menu ? 'nav nav-show' : 'nav'}`}>
@@ -24,7 +41,6 @@ const Navbar = () => {
 				smooth={true}
 				offset={-70}
 				onClick={() => showMenu(false)}
-				onTouchStart={() => showMenu(false)}
 			>
 				Home
 			</Link>
@@ -36,7 +52,6 @@ const Navbar = () => {
 				smooth={true}
 				offset={-70}
 				onClick={() => showMenu(false)}
-				onTouchStart={() => showMenu(false)}
 			>
 				Skills
 			</Link>
@@ -48,7 +63,6 @@ const Navbar = () => {
 				smooth={true}
 				offset={-70}
 				onClick={() => showMenu(false)}
-				onTouchStart={() => showMenu(false)}
 			>
 				Portfolio
 			</Link>
@@ -60,7 +74,6 @@ const Navbar = () => {
 				smooth={true}
 				offset={-70}
 				onClick={() => showMenu(false)}
-				onTouchStart={() => showMenu(false)}
 			>
 				Get in Touch
 			</Link>
@@ -68,7 +81,6 @@ const Navbar = () => {
 			<div
 				className={`${menu ? 'nav__menu-hide' : 'nav__menu'}`}
 				onClick={() => toggleMenu()}
-				onTouchStart={() => toggleMenu()}
 			>
 				<div></div>
 				<div></div>
@@ -78,7 +90,6 @@ const Navbar = () => {
 			<ImCross
 				className={`${menu ? 'nav__cross' : 'nav__cross-hide'}`}
 				onClick={() => toggleMenu()}
-				onTouchStart={() => toggleMenu()}
 				fill='#ff4aae'
 			/>
 		</nav>
