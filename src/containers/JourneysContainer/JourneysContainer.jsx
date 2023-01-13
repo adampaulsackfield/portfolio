@@ -35,7 +35,7 @@ const JourneysContainer = () => {
 			</article>
 
 			<article className='journey__experience'>
-				<h2 class='accent'>Experience</h2>
+				<h2 class='journey__header'>Experience</h2>
 
 				<article class='experience'>
 					{roles && roles.map((role) => <Journey role={role} />)}
