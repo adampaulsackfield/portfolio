@@ -30,7 +30,14 @@ const Navbar = () => {
 
 	return (
 		<nav className={`${menu ? 'nav nav-show' : 'nav'}`}>
-			<Link to='/' className='nav__logo' spy={true} smooth={true} offset={-70}>
+			<Link
+				to='/'
+				className='nav__logo'
+				spy={true}
+				smooth={true}
+				offset={-70}
+				role='link'
+			>
 				AS
 			</Link>
 
@@ -41,6 +48,7 @@ const Navbar = () => {
 				smooth={true}
 				offset={-70}
 				onClick={() => showMenu(false)}
+				role='link'
 			>
 				Home
 			</Link>
@@ -52,6 +60,7 @@ const Navbar = () => {
 				smooth={true}
 				offset={-70}
 				onClick={() => showMenu(false)}
+				role='link'
 			>
 				Skills
 			</Link>
@@ -63,6 +72,7 @@ const Navbar = () => {
 				smooth={true}
 				offset={-70}
 				onClick={() => showMenu(false)}
+				role='link'
 			>
 				Portfolio
 			</Link>
@@ -74,6 +84,7 @@ const Navbar = () => {
 				smooth={true}
 				offset={-70}
 				onClick={() => showMenu(false)}
+				role='link'
 			>
 				Get in Touch
 			</Link>
