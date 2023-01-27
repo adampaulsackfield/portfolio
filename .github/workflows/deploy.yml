@@ -14,7 +14,10 @@ jobs:
         key: ${{ secrets.key }}
         passphrase: ${{ secrets.passphrase }}
         port: ${{ secrets.PORT }}
-        script: whoami
+        script: |
+          cd /home/chopin/portfolio
+          npm run build
+          cp -r build/* /var/www/adamsackfield.uk/html/
 
 
      
