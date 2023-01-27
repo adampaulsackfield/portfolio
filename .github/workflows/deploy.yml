@@ -15,3 +15,6 @@ jobs:
         passphrase: ${{ secrets.passphrase }}
         port: ${{ secrets.PORT }}
         script: whoami
+
+
+     
