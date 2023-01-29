@@ -9,7 +9,7 @@ describe('<Navbar /> Tests', () => {
 		render(<Navbar />);
 
 		const headerText = screen.getByText(/AS/i);
-		const links = ['AS', 'Home', 'Skills', 'Portfolio', 'Get in Touch'];
+		const links = ['AS!', 'Home', 'Skills', 'Portfolio', 'Get in Touch'];
 
 		const actualLinks = screen.getAllByRole('link');
 
