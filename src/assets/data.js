@@ -13,7 +13,7 @@ export const projects = [
 		img: './images/calculator.jpg',
 		source:
 			'https://github.com/adampaulsackfield/adampaulsackfield.github.io-calculator',
-		live: 'https://adampaulsackfield.github.io/adampaulsackfield.github.io-calculator/',
+		live: 'https://calculator.adamsackfield.uk',
 		type: 'front-end',
 		tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'State', 'Jest', 'Cypress'],
 	},
@@ -23,7 +23,7 @@ export const projects = [
 		img: './images/snake.jpg',
 		source:
 			'https://github.com/adampaulsackfield/adampaulsackfield.github.io-snake',
-		live: 'https://adampaulsackfield.github.io/adampaulsackfield.github.io-snake/',
+		live: 'https://snake.adamsackfield.uk',
 		type: 'full-stack',
 		tags: ['HTML', 'CSS', 'SCSS', 'JavaScript', 'Canvas'],
 	},
