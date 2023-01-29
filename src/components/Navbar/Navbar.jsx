@@ -38,7 +38,7 @@ const Navbar = () => {
 				offset={-70}
 				role='link'
 			>
-				AS!
+				AS
 			</Link>
 
 			<Link
