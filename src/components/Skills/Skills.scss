@@ -18,16 +18,16 @@
 		margin-top: 2rem;
 
 		&--wrapper {
-			width: 40%;
+			width: 30%;
 		}
 
 		&--icon {
-			font-size: 4rem;
+			font-size: 3rem;
 			opacity: 0.75;
 		}
 
 		&--text {
-			font-size: 1rem;
+			font-size: 0.75rem;
 			color: $accent;
 			font-family: $text-serif;
 		}
@@ -53,6 +53,11 @@
 
 			&--wrapper {
 				width: auto;
+			}
+
+			&--icon {
+				font-size: 4rem;
+				opacity: 0.75;
 			}
 		}
 	}

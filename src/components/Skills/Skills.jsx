@@ -11,7 +11,17 @@ import {
 	FaJava,
 	FaDocker,
 } from 'react-icons/fa';
-import { SiJest, SiCypress, SiTypescript } from 'react-icons/si';
+import {
+	SiJest,
+	SiCypress,
+	SiTypescript,
+	SiSpring,
+	SiMysql,
+	SiMongodb,
+	SiAnsible,
+	SiJenkins,
+	SiTerraform,
+} from 'react-icons/si';
 
 const Skills = () => {
 	return (
@@ -55,7 +65,7 @@ const Skills = () => {
 
 					<div className='skills__icons--wrapper'>
 						<SiTypescript fill='#474650' />
-						<p className='skills__icons--text'>JavaScript</p>
+						<p className='skills__icons--text'>TypeScript</p>
 					</div>
 
 					<div className='skills__icons--wrapper'>
@@ -84,8 +94,38 @@ const Skills = () => {
 					</div>
 
 					<div className='skills__icons--wrapper'>
+						<SiSpring fill='#474650' />
+						<p className='skills__icons--text'>Spring</p>
+					</div>
+
+					<div className='skills__icons--wrapper'>
+						<SiMysql fill='#474650' />
+						<p className='skills__icons--text'>MySQL</p>
+					</div>
+
+					<div className='skills__icons--wrapper'>
+						<SiMongodb fill='#474650' />
+						<p className='skills__icons--text'>MongoDB</p>
+					</div>
+
+					<div className='skills__icons--wrapper'>
 						<FaDocker fill='#474650' />
 						<p className='skills__icons--text'>Docker</p>
+					</div>
+
+					<div className='skills__icons--wrapper'>
+						<SiAnsible fill='#474650' />
+						<p className='skills__icons--text'>Ansible</p>
+					</div>
+
+					<div className='skills__icons--wrapper'>
+						<SiJenkins fill='#474650' />
+						<p className='skills__icons--text'>Jenkins</p>
+					</div>
+
+					<div className='skills__icons--wrapper'>
+						<SiTerraform fill='#474650' />
+						<p className='skills__icons--text'>Terraform</p>
 					</div>
 				</article>
 			</section>
