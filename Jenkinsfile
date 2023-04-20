@@ -6,10 +6,10 @@ pipeline {
   stages {
     stage('Clone repository') {
       steps {
-        git 'https://github.com/your/repo.git'
+        git 'https://github.com/adampaulsackfield/portfolio.git'
       }
     }
-    
+
     stage('Install') {
       steps {
         echo 'Installing...'
