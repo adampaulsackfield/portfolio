@@ -1,15 +1,15 @@
 #! /usr/bin/env groovy
 
 pipeline {
-
-  agent {
-    docker {
-      image 'node'
-      args '-u root'
-    }
-  }
+  agent any
 
   stages {
+    stage('Clone repository') {
+      steps {
+        git 'https://github.com/your/repo.git'
+      }
+    }
+    
     stage('Install') {
       steps {
         echo 'Installing...'
