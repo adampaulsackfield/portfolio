@@ -23,5 +23,11 @@ pipeline {
         sh 'npm run build'
       }
     }
+
+    stage('Copy to nginx directory') {
+      steps {
+        sh 'cp -r build/* /var/www/adamsackfield.uk/html'
+      }
+    }
   }
 }
